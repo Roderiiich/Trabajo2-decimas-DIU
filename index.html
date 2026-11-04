@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos - Mi Marca</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Hoja de estilos personalizada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 1. NAVBAR / ENCABEZADO -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                <!-- SVG Icono propio representativo de la marca -->
+                <svg class="brand-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>MI TIENDA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HÉRO / INICIO -->
+    <header id="inicio" class="bg-principal text-white text-center py-5">
+        <div class="container my-4">
+            <h1 class="display-4 fw-bold">Bienvenidos a Mi Tienda</h1>
+            <p class="lead">Ofrecemos los mejores productos con la más alta calidad y atención personalizada.</p>
+            <a href="#productos" class="btn btn-acento btn-lg mt-3">Ver Galería</a>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN MISIÓN Y VISIÓN -->
+    <section id="nosotros" class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-brand">Nuestra Empresa</h2>
+                <hr class="w-25 mx-auto text-primary">
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 card-custom p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-compass fs-1 text-primary me-3"></i>
+                                <h3 class="card-title h4 m-0 text-brand">Misión</h3>
+                            </div>
+                            <p class="card-text text-muted">
+                                Proveer a nuestros clientes productos innovadores de la más alta calidad, superando sus expectativas mediante un servicio cercano, ágil y comprometido con la excelencia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 card-custom p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="bi bi-eye fs-1 text-primary me-3"></i>
+                                <h3 class="card-title h4 m-0 text-brand">Visión</h3>
+                            </div>
+                            <p class="card-text text-muted">
+                                Convertirnos en la marca líder del sector a nivel regional, siendo reconocidos por la innovación constante en nuestros productos y un modelo de desarrollo sostenible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. GALERÍA DE PRODUCTOS -->
+    <section id="productos" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-brand">Catálogo de Productos</h2>
+                <p class="text-muted">Explora nuestra oferta destacada</p>
+                <hr class="w-25 mx-auto text-primary">
+            </div>
+            <div class="row g-4">
+                <!-- Producto 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-custom shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d47a1/ffffff?text=Producto+1" class="card-img-top" alt="Producto 1">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-brand">Producto Modelo Alfa</h5>
+                            <p class="card-text text-muted flex-grow-1">Descripción breve del producto destacando sus características principales y durabilidad.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fs-5 fw-bold text-dark">$29.990</span>
+                                <a href="#contacto" class="btn btn-acento btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-custom shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/1565c0/ffffff?text=Producto+2" class="card-img-top" alt="Producto 2">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-brand">Producto Modelo Beta</h5>
+                            <p class="card-text text-muted flex-grow-1">Ideal para uso diario con diseño compacto, alta resistencia y rendimiento garantizado.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fs-5 fw-bold text-dark">$34.990</span>
+                                <a href="#contacto" class="btn btn-acento btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 card-custom shadow-sm">
+                        <img src="https://via.placeholder.com/400x250/0d47a1/ffffff?text=Producto+3" class="card-img-top" alt="Producto 3">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-brand">Producto Modelo Gamma</h5>
+                            <p class="card-text text-muted flex-grow-1">Edición premium elaborada con materiales sustentables y acabados de alta gama.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="fs-5 fw-bold text-dark">$49.990</span>
+                                <a href="#contacto" class="btn btn-acento btn-sm">Consultar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="section-padding bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card card-custom p-4 shadow-sm">
+                        <div class="card-body">
+                            <h2 class="card-title text-center text-brand mb-4">Formulario de Contacto</h2>
+                            <form action="#" method="POST">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nombre" class="form-label">Nombre Completo</label>
+                                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="email" placeholder="ejemplo@correo.com" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="asunto" class="form-label">Asunto</label>
+                                        <input type="text" class="form-control" id="asunto" placeholder="Motivo de la consulta" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="mensaje" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                    </div>
+                                    <div class="col-12 text-center mt-4">
+                                        <button type="submit" class="btn btn-acento btn-lg px-5">Enviar Mensaje</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MAPA DE TIENDA FÍSICA -->
+    <section id="ubicacion" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-brand">Nuestra Tienda Física</h2>
+                <p class="text-muted">Visítanos y conoce nuestros productos en persona</p>
+                <hr class="w-25 mx-auto text-primary">
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="map-container shadow-sm">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.821383792019!2d-73.0528!3d-36.827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9622b3f113700000%3A0x1000000000000000!2sConcepci%C3%B3n%2C%20B%C3%ADob%C3%ADo!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FOOTER Y REDES SOCIALES -->
+    <footer class="bg-principal text-white py-4">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="m-0 fw-bold">MI TIENDA</h5>
+                    <small>© 2026 Todos los derechos reservados.</small>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <span class="me-3 d-block d-md-inline mb-2 mb-md-0">Síguenos en redes:</span>
+                    <a href="https://facebook.com" class="text-white me-3 fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com" class="text-white me-3 fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com" class="text-white me-3 fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://whatsapp.com" class="text-white fs-4" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>

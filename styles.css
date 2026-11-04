@@ -1,0 +1,62 @@
+/* ==========================================================================
+   APLICACIÓN DE FÓRMULA DE COLOR: COMPLEMENTARIA
+   Color Primario/Marca: Azul Profundo (#0D47A1)
+   Color Complementario/Acento: Naranja Cálido (#FF6F00)
+   Fondo neutro claro: #F8F9FA
+   ========================================================================== */
+
+:root {
+    --color-principal: #0d47a1;
+    --color-secundario: #1565c0;
+    --color-acento: #ff6f00;
+    --color-fondo-suave: #f8f9fa;
+}
+
+/* Encabezados y marca */
+.navbar-brand, .text-brand {
+    color: var(--color-principal);
+    font-weight: bold;
+}
+
+.bg-principal {
+    background-color: var(--color-principal) !important;
+}
+
+.btn-acento {
+    background-color: var(--color-acento);
+    color: #ffffff;
+    border: none;
+}
+
+.btn-acento:hover {
+    background-color: #e66400;
+    color: #ffffff;
+}
+
+/* Marca e Icono personalizado en SVG */
+.brand-logo {
+    width: 35px;
+    height: 35px;
+    fill: var(--color-acento);
+}
+
+/* Estilos de tarjetas y secciones */
+.card-custom {
+    border: 1px solid rgba(13, 71, 161, 0.125);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
